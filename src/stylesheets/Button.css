@@ -3,9 +3,9 @@ a {
 }
 
 .btn {
-  width: 110px;
+  width: auto;
   height: auto;
-  padding: 2px;
+  padding: 0 10px 0 10px;
   background-color: #ffffff;
   border-radius: 100px;
   color: black;

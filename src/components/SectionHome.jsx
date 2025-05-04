@@ -10,7 +10,7 @@ const SectionHome = forwardRef((props, ref) => {
           <div className='texts'>
             <div className='text-greeting'>Hello, I'm</div>
             <h1>Jimmy<br/>Piedrahita</h1>
-            <p>SOFTWARE DEVELOPER</p>
+            <p>Software</p>
           </div>
           <img src={Hero} alt="Jimmy Piedrahita, Software developer" />
         </div>

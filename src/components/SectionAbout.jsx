@@ -1,12 +1,12 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import '../stylesheets/SectionAbout.css';
 
-function SectionAbout() {
+const SectionAbout = forwardRef((props, ref) => {
   return (
-    <div id='about' className='section-about'>
+    <div id='about' className='section-about' ref={ref}>
 
     </div>
-  )
-}
+  );
+});
 
-export default SectionAbout
+export default SectionAbout;

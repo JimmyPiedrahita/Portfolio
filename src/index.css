@@ -4,3 +4,14 @@
     font-family: Poppins, sans-serif;
     font-size: 16px;
 }
+
+:root {
+    --bg-primary-color: #5E9FA3; /*Usado*/
+    --bg-secondary-color: #171430; /*Usado*/
+    --bg-tertiary-color: #ffffff; /*Usado*/
+    --text-primary-color: #000000; /*Usado*/
+    --text-secondary-color: #ffffff; /*Usado*/
+    --text-tertiary-color: #000000;
+    --border-primary-color: #000000; /*Usado*/
+    --shadow-primary-color: rgba(0, 0, 0, 0.5);
+}

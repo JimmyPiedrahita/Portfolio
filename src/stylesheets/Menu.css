@@ -10,7 +10,7 @@
 .menu {
   width: fit-content;
   height: auto;
-  background-color: #ffffff;
+  background-color: var(--bg-tertiary-color);
   border-radius: 100px;
   margin-top: 10px;
   display: flex;

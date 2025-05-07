@@ -1,17 +1,10 @@
-import React, { useState } from 'react'
+import React from 'react'
 import '../stylesheets/Menu.css';
 import Button from './Button';
-import { DarkModeSwitch } from 'react-toggle-dark-mode';
+import ToggleDarkNightMode from './ToggleDarkNightMode';
 
 
 function Menu({ activeSection }) {
-
-  const [isNightMode, setIsNightMode] = useState(false);
-
-  const toggleMode = () => {
-    setIsNightMode(!isNightMode);
-  }
-
   return (
     <div className='container-menu'>
       <div className='menu'>
@@ -20,12 +13,7 @@ function Menu({ activeSection }) {
         <Button text='Skills' link='skills' activeSection={activeSection} />
         <Button text='Works' link='works' activeSection={activeSection} />
         <Button text='Contact' link='contact' activeSection={activeSection} />
-        <DarkModeSwitch
-          checked={!isNightMode}
-          onChange={toggleMode}
-          size={25}
-          moonColor='black'
-        />
+        <ToggleDarkNightMode />
       </div>
     </div>
   )

@@ -2,6 +2,7 @@ import './App.css'
 import SectionAbout from './components/SectionAbout';
 import SectionHome from './components/SectionHome';
 import SectionSkills from './components/SectionSkills';
+import useLocalStorage from 'use-local-storage';
 import Menu from './components/Menu';
 import { useRef, useState, useEffect } from 'react';
 
@@ -9,6 +10,9 @@ function App() {
 
   const [activeSection, setActiveSection] = useState('home');
   const sectionsRef = useRef([]);
+
+  const preference = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const [isDarkMode, setIsDarkMode] = useLocalStorage('isDarkMode', preference);
 
   const addToRefs = (el) => {
     if (el && !sectionsRef.current.includes(el)) {
@@ -36,12 +40,16 @@ function App() {
   }, []);
 
   return (
-    <>
-      <Menu activeSection={activeSection}/>
+    <div className='App' data-theme={isDarkMode ? 'dark' : 'light'}>
+      <Menu 
+        activeSection={activeSection}
+        isChecked={!isDarkMode}
+        handleChange={() => setIsDarkMode(!isDarkMode)}
+      />
       <SectionHome ref={addToRefs} />
       <SectionAbout ref={addToRefs} />
       <SectionSkills ref={addToRefs} />
-    </>
+    </div>
   )
 }
 

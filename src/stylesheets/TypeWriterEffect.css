@@ -7,6 +7,7 @@
 .typewriter {
     font-size: 20px;
     font-weight: 500;
+    color: var(--text-tertiary-color);
 }
 
 @keyframes blink {

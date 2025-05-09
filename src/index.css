@@ -14,6 +14,7 @@
     --text-tertiary-color: #000000; 
     --border-primary-color: #000000;
     --shadow-primary-color: rgba(0, 0, 0, 0.5);
+    --error-text-primary-color: #ff0000;
 }
 
 [data-theme='dark'] {
@@ -26,4 +27,5 @@
     --text-tertiary-color: #B0B0B0;
     --border-primary-color: #FF9800; 
     --shadow-primary-color: rgba(0, 0, 0, 0.2);
+    --error-text-primary-color: #ff0000;
 }

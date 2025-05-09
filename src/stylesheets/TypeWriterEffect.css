@@ -23,3 +23,9 @@
         opacity: 0;
     }
 }
+
+.error {
+    text-decoration: underline wavy var(--error-text-primary-color);
+    font-size: inherit;
+    font-weight: inherit;
+}

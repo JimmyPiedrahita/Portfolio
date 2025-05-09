@@ -4,6 +4,7 @@ import SectionHome from './components/SectionHome';
 import SectionSkills from './components/SectionSkills';
 import useLocalStorage from 'use-local-storage';
 import Menu from './components/Menu';
+import GrainOverlay from './components/GrainOverlay';
 import { useRef, useState, useEffect } from 'react';
 
 function App() {
@@ -49,6 +50,8 @@ function App() {
       <SectionHome ref={addToRefs} />
       <SectionAbout ref={addToRefs} />
       <SectionSkills ref={addToRefs} />
+            <GrainOverlay />
+
     </div>
   )
 }

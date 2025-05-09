@@ -6,7 +6,6 @@ a {
   width: auto;
   height: auto;
   padding: 5px 10px;
-  background-color: var(--bg-tertiary-color);
   border-radius: 100px;
   color: var(--text-primary-color);
   cursor: pointer;

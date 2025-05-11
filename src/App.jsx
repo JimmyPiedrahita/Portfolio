@@ -3,8 +3,8 @@ import SectionAbout from './components/SectionAbout';
 import SectionHome from './components/SectionHome';
 import SectionSkills from './components/SectionSkills';
 import useLocalStorage from 'use-local-storage';
+import Noise from './components/Noise';
 import Menu from './components/Menu';
-import GrainOverlay from './components/GrainOverlay';
 import { useRef, useState, useEffect } from 'react';
 
 function App() {
@@ -42,6 +42,7 @@ function App() {
 
   return (
     <div className='App' data-theme={isDarkMode ? 'dark' : 'light'}>
+      <Noise />
       <Menu 
         activeSection={activeSection}
         isChecked={!isDarkMode}
@@ -50,8 +51,6 @@ function App() {
       <SectionHome ref={addToRefs} />
       <SectionAbout ref={addToRefs} />
       <SectionSkills ref={addToRefs} />
-            <GrainOverlay />
-
     </div>
   )
 }

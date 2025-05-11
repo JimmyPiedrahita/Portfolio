@@ -1,4 +1,3 @@
-import React from 'react'
 import '../stylesheets/Noise.css';
 
 function Noise() {

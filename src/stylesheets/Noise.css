@@ -53,6 +53,6 @@
   opacity: .25;
   animation: noiseMove 1s infinite;
   pointer-events: none;
-  z-index: 9999;
-  mix-blend-mode: soft-light;
+  z-index: -1;
+  mix-blend-mode: soft-color;
 }

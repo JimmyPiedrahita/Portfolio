@@ -1,6 +1,6 @@
 import React, { forwardRef } from 'react';
 import '../stylesheets/SectionHome.css';
-import Hero from '../assets/img/img-hero.jpg';
+import Hero from '../assets/img/img-hero.png';
 import TypeWriterEffect from './TypeWriterEffect';
 
 const SectionHome = forwardRef((props, ref) => {

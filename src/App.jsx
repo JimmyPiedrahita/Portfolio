@@ -22,6 +22,7 @@ function App() {
   };
 
   useEffect(() => {
+    document.documentElement.setAttribute('data-theme', isDarkMode ? 'dark' : 'light')
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -38,11 +39,10 @@ function App() {
     });
 
     return () => observer.disconnect();
-  }, []);
+  }, [isDarkMode]);
 
   return (
-    <div className='App' data-theme={isDarkMode ? 'dark' : 'light'}>
-      <Noise />
+    <div className='App'>
       <Menu 
         activeSection={activeSection}
         isChecked={!isDarkMode}
@@ -51,6 +51,7 @@ function App() {
       <SectionHome ref={addToRefs} />
       <SectionAbout ref={addToRefs} />
       <SectionSkills ref={addToRefs} />
+      <Noise />
     </div>
   )
 }

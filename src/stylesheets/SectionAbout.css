@@ -2,4 +2,41 @@
   width: 100%;
   height: 100vh;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  width: 100%;
+  height: auto;
+  text-align: start;
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--text-tertiary-color);
+}
+
+p {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--text-tertiary-color);
+  margin-top: 20px;
+}
+
+.btn-download {
+  margin-top: 20px;
+  border: none;
+  width: auto;
+  height: auto;
+  padding: 10px 20px;
+  border-radius: 100px;
+  background-color: var(--bg-secondary-color);
+  color: var(--text-secondary-color);
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn-download:hover {
+  font-weight: bold;
 }
